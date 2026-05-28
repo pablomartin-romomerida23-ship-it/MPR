@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actividad 4</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">
+Proyecto ASIR
+</a>
+
+</div>
+
+</nav>
+
+<div class="container mt-5">
+
+<h1 class="mb-4">
+Actividad 4 - Instalación y configuración de dispositivos de red
+</h1>
+
+<div class="menu-actividades">
+
+<a href="actividad1.html">Act 1</a>
+<a href="actividad2.html">Act 2</a>
+<a href="actividad3.html">Act 3</a>
+<a href="actividad4.html">Act 4</a>
+<a href="actividad5.html">Act 5</a>
+<a href="actividad6.html">Act 6</a>
+<a href="actividad8.html">Act 8</a>
+
+</div>
+
+<p>
+Configuración de VLANs, Router on Stick, DHCP y dispositivos de red.
+</p>
+
+<hr>
+
+<h2>
+Creación de interfaces VLAN
+</h2>
+
+<p>
+Vamos a empezar creando las interfaces VLAN desde Winbox.
+</p>
+
+<p>
+Para ello iremos al apartado Interfaces y después a VLAN.
+</p>
+
+<img src="mikrotik_vlan1.png" class="img-fluid rounded shadow mb-3">
+
+<img src="mikrotik_vlan2.png" class="img-fluid rounded shadow mb-3">
+
+<img src="mikrotik_vlan3.png" class="img-fluid rounded shadow mb-3">
+
+<hr>
+
+<h2>
+Asignación de direcciones IP
+</h2>
+
+<p>
+Ahora vamos a asignar las direcciones IP a la VLAN, vamos a addresses al +
+</p>
+
+<img src="addresses1.png" class="img-fluid rounded shadow mb-3">
+
+<hr>
+
+<h2>
+Configuración DHCP
+</h2>
+
+<p>
+Vamos a configurar el servidor DHCP, vamos al apartado IP, al DHCP Server y DHCP Setup
+</p>
+
+<img src="serverdhcp1.png" class="img-fluid rounded shadow mb-3">
+
+<p>
+En cada ventana vamos a ir poniendo las IP requeridas para dicho apartado
+</p>
+
+<img src="configip1.png" class="img-fluid rounded shadow mb-3">
+
+<img src="configip2.png" class="img-fluid rounded shadow mb-3">
+
+<img src="configip3.png" class="img-fluid rounded shadow mb-3">
+
+<img src="configip4.png" class="img-fluid rounded shadow mb-3">
+
+<hr>
+
+<h2>
+Configuración DNS
+</h2>
+
+<p>
+Aquí hemos puesto el DNS Server 8.8.8.8
+</p>
+
+<img src="dnsserver1.png" class="img-fluid rounded shadow mb-3">
+
+<hr>
+
+<h2>
+Configuración Lease Time
+</h2>
+
+<p>
+Completamos el Least Time le ponemos 00:30:00
+</p>
+
+<img src="leasetime1.png" class="img-fluid rounded shadow mb-3">
+
+<hr>
+
+<h2>
+Creación del Bridge
+</h2>
+
+<p>
+Despues crearemos un bridge como aparece en la siguiente captura
+</p>
+
+<img src="bridgefinal1.png" class="img-fluid rounded shadow mb-3">
+
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+
+<p>
+Pablo Martin Romo - 1º ASIR
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
